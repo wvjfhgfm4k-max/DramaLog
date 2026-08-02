@@ -2,26 +2,98 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DramaLog</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<header><h1>🎬 DramaLog</h1></header>
-<main>
-<section class="card">
-<h2>Neue Serie</h2>
-<input id="title" placeholder="Titel">
-<input id="service" placeholder="Streamingdienst">
-<input id="rating" type="number" min="0" max="10" step="0.5" placeholder="Bewertung">
-<button onclick="addSeries()">Speichern</button>
+
+<header>
+
+<h1>🎬 DramaLog</h1>
+
+<p>Dein persönlicher Asia-Drama Tracker</p>
+
+</header>
+
+
+<div class="container">
+
+<input
+id="search"
+type="text"
+placeholder="🔍 Serie suchen..."
+>
+
+<button id="addButton">
+
+➕ Neue Serie
+
+</button>
+
+
+<section class="dashboard">
+
+<div class="box">
+
+❤️
+
+<h3>Favoriten</h3>
+
+<span id="favCount">0</span>
+
+</div>
+
+<div class="box">
+
+📺
+
+<h3>Aktuell</h3>
+
+<span id="watchingCount">0</span>
+
+</div>
+
+<div class="box">
+
+✅
+
+<h3>Gesehen</h3>
+
+<span id="seenCount">0</span>
+
+</div>
+
+<div class="box">
+
+📝
+
+<h3>Wunschliste</h3>
+
+<span id="wishCount">0</span>
+
+</div>
+
 </section>
-<section class="card">
+
 <h2>Meine Serien</h2>
-<input id="search" placeholder="Suchen..." oninput="render()">
-<div id="list"></div>
-</section>
-</main>
+
+<div id="seriesList">
+
+<p class="empty">
+
+Noch keine Serien gespeichert.
+
+</p>
+
+</div>
+
+</div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
