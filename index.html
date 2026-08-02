@@ -3,67 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>DramaLog</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="header">
 <h1>🎬 DramaLog</h1>
 <p>Dein persönlicher Asia-Drama-Tracker</p>
 </header>
+
 <main class="container">
+
 <section class="topbar">
-<input type="text" id="searchInput" placeholder="🔍 Serie suchen...">
-<button id="newSeriesBtn">➕ Neue Serie</button>
+
+<input
+id="searchInput"
+type="text"
+placeholder="🔍 Serie suchen..."
+>
+
+<button id="newSeriesBtn">
+➕ Neue Serie
+</button>
+
 </section>
+
 <section class="stats">
-<div class="statCard"><span id="totalSeries">0</span><small>Serien</small></div>
-<div class="statCard"><span id="watchingSeries">0</span><small>Aktuell</small></div>
-<div class="statCard"><span id="finishedSeries">0</span><small>Gesehen</small></div>
-<div class="statCard"><span id="favoriteSeries">0</span><small>Favoriten</small></div>
+
+<div class="statCard">
+<h2 id="favoriteSeries">0</h2>
+<p>❤️ Favoriten</p>
+</div>
+
+<div class="statCard">
+<h2 id="watchingSeries">0</h2>
+<p>📺 Aktuell</p>
+</div>
+
+<div class="statCard">
+<h2 id="finishedSeries">0</h2>
+<p>✅ Gesehen</p>
+</div>
+
+<div class="statCard">
+<h2 id="totalSeries">0</h2>
+<p>📝 Serien</p>
+</div>
+
 </section>
-<section id="seriesContainer">
+
+<section
+id="seriesContainer"
+class="seriesContainer">
+
 <div class="emptyState">
+
 <h2>Noch keine Serien</h2>
-<p>Klicke auf <strong>„Neue Serie“</strong>, um deine erste Serie anzulegen.</p>
+
+<p>
+Klicke auf
+<strong>„Neue Serie“</strong>,
+um deine erste Serie anzulegen.
+</p>
+
 </div>
+
 </section>
+
 </main>
-<div id="seriesModal" class="modal hidden">
+
+<!-- Modal -->
+
+<div
+id="seriesModal"
+class="modal hidden">
+
 <div class="modalContent">
+
 <h2>Neue Serie</h2>
-<label>Titel</label>
-<input type="text" id="title" placeholder="Crash Landing on You">
-<label>Land</label>
+
+<input
+id="title"
+type="text"
+placeholder="Titel">
+
 <select id="country">
-<option>Südkorea 🇰🇷</option>
-<option>Japan 🇯🇵</option>
-<option>China 🇨🇳</option>
+<option>Südkorea</option>
+<option>Japan</option>
+<option>China</option>
+<option>Taiwan</option>
+<option>Thailand</option>
 </select>
-<label>Streamingdienst</label>
-<input type="text" id="streaming" placeholder="Netflix">
-<label>Bewertung</label>
-<input type="number" id="rating" min="0" max="10" step="0.5">
-<label>Status</label>
+
+<input
+id="streaming"
+type="text"
+placeholder="Streamingdienst">
+
 <select id="status">
+
 <option>Schaue ich gerade</option>
+
 <option>Abgeschlossen</option>
+
 <option>Wunschliste</option>
-<option>Pausiert</option>
+
 </select>
-<label>Folgen insgesamt</label>
-<input type="number" id="episodes">
-<label>Gesehene Folgen</label>
-<input type="number" id="watchedEpisodes">
-<label><input type="checkbox" id="favorite"> Favorit</label>
-<label>Notizen</label>
-<textarea id="notes" rows="4"></textarea>
+
+<input
+id="episodes"
+type="number"
+placeholder="Folgen">
+
+<input
+id="watchedEpisodes"
+type="number"
+placeholder="Gesehen">
+
+<input
+id="rating"
+type="number"
+min="0"
+max="10"
+step="0.5"
+placeholder="Bewertung">
+
+<textarea
+id="notes"
+placeholder="Notizen"></textarea>
+
+<label>
+
+<input
+id="favorite"
+type="checkbox">
+
+Favorit
+
+</label>
+
 <div class="buttons">
-<button id="cancelBtn">Abbrechen</button>
-<button id="saveBtn">Speichern</button>
+
+<button id="cancelBtn">
+Abbrechen
+</button>
+
+<button id="saveBtn">
+Speichern
+</button>
+
 </div>
+
 </div>
+
 </div>
+
 <script src="script.js"></script>
+
 </body>
 </html>
