@@ -1,0 +1,8 @@
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#111827;color:#fff;margin:0}
+header{background:#1f2937;padding:16px;text-align:center}
+main{max-width:700px;margin:auto;padding:16px}
+.card{background:#1f2937;padding:16px;border-radius:14px;margin-bottom:16px}
+input{width:100%;padding:10px;margin:8px 0;border-radius:10px;border:1px solid #555;background:#374151;color:#fff;box-sizing:border-box}
+button{padding:10px 16px;border:none;border-radius:10px;background:#2563eb;color:#fff}
+.item{border-top:1px solid #444;padding:10px 0}
+a{color:#93c5fd}

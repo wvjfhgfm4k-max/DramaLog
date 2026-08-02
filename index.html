@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DramaLog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>🎬 DramaLog</h1></header>
+<main>
+<section class="card">
+<h2>Neue Serie</h2>
+<input id="title" placeholder="Titel">
+<input id="service" placeholder="Streamingdienst">
+<input id="rating" type="number" min="0" max="10" step="0.5" placeholder="Bewertung">
+<button onclick="addSeries()">Speichern</button>
+</section>
+<section class="card">
+<h2>Meine Serien</h2>
+<input id="search" placeholder="Suchen..." oninput="render()">
+<div id="list"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
