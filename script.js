@@ -1,1 +1,1 @@
-document.getElementById('addButton').onclick=()=>alert('Serie hinzufügen kommt im nächsten Update.');
+Unsupported Media Type
